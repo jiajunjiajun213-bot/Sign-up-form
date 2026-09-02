@@ -1,1 +1,19 @@
-# Sign-up-form
+*{
+    border: 1px solid black ;
+}
+body{
+    display:flex;
+    
+    
+}
+img{
+    width: 50%;
+    height: 760px;
+}
+input:invalid{
+    border : 1px dashed red
+}
+input:valid{
+    border: 1px solid green;
+
+}

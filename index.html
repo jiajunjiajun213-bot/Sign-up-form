@@ -1,1 +1,47 @@
-# Sign-up-form
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="Grab-img.jpg" alt="log-in-page">
+    <form action="" method="post">
+        <header>
+            <h1>Get started</h1>
+        </header>
+        <div>
+            <label for="First-Name">FIRST-NAME</label>
+            <input id="First-Name" name="First-Name" type="text" minlength="6" maxlength="10" pattern="[A-Za-z]+" title="Please use only letters. required" >
+        </div>
+        <div>
+            <label for="Last-Name">LAST-NAME</label>
+            <input id="Last-Name" name="Last-Name" type="text" minlength="6" maxlength="10" pattern="[A-Za-z]+" title="Please use only letters. required">
+        </div>
+        <div>
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="Jun@example.com">
+        </div>
+        <div>
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" id="phone-number" name="phone-number" placeholder="012-229-2938" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </div>
+        <div>
+            <label for="password">*PASSWORD</label>
+            <input type="password" id="password" name="password" minlength="8" maxlength="18" required>
+        </div>
+        <div>
+            <label for="comfirm-password">*COMFIRM PASSWORD</label>
+            <input type="comfirm-password" id="comfirm-password" name="comfirm-password" minlength="8" maxlength="18" required>
+        </div>
+        <div class='form-row'>
+            <button>Create Account</button>
+        </div>
+
+
+    </form>
+    
+</body>
+</html>
