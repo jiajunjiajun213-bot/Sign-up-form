@@ -5,43 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <img src="Grab-img.jpg" alt="log-in-page">
     <form action="" method="post">
-        <header>
-            <h1>Get started</h1>
-        </header>
+      <header>
+        <h1>Get started</h1>
+      </header>
+      <div>
         <div>
-            <label for="First-Name">FIRST-NAME</label>
-            <input id="First-Name" name="First-Name" type="text" minlength="6" maxlength="10" pattern="[A-Za-z]+" title="Please use only letters. required" >
+            <label for="First-Name">FIRST NAME</label>
+            <input id="First-Name" name="First-Name" type="text"  maxlength="15"  pattern="[A-Za-z]+" placeholder="  e.g. John" autocomplete="given-name" >
+            <span></span>
+            <span></span>
         </div>
         <div>
-            <label for="Last-Name">LAST-NAME</label>
-            <input id="Last-Name" name="Last-Name" type="text" minlength="6" maxlength="10" pattern="[A-Za-z]+" title="Please use only letters. required">
+            <label for="Last-Name">LAST NAME</label>
+            <input id="Last-Name" name="Last-Name" type="text"   maxlength="15"  pattern="[A-Za-z]+" placeholder="  e.g. Doe" autocomplete="family-name" required>
+            <span></span>
+            <span></span>
         </div>
+      </div>
+      <div>
         <div>
             <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" placeholder="Jun@example.com">
+            <input type="email" autocomplete="email"  id="email" name="email" placeholder="  e.g. Jun@example.com" required>
+            <span></span>
+            <span></span>
         </div>
         <div>
             <label for="phone-number">PHONE NUMBER</label>
-            <input type="tel" id="phone-number" name="phone-number" placeholder="012-229-2938" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <input type="tel"   id="phone-number" name="phone-number" placeholder="  e.g. 012-229-2938" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" autocomplete="tel" required>
+            <span></span>
+            <span></span>
         </div>
-        <div>
+       </div>
+     <div>
+        <div class="password">
             <label for="password">*PASSWORD</label>
-            <input type="password" id="password" name="password" minlength="8" maxlength="18" required>
+            <input type="password"   id="password" name="password" pattern="(?=.*\d)(?=.*[A-Za-z]).{8,}" required>
+            <span></span>
+            <span></span>
         </div>
-        <div>
+        <div class="password">
             <label for="comfirm-password">*COMFIRM PASSWORD</label>
-            <input type="comfirm-password" id="comfirm-password" name="comfirm-password" minlength="8" maxlength="18" required>
+            <input type="password"  id="comfirm-password" name="comfirm-password" pattern="(?=.*\d)(?=.*[A-Za-z]).{8,}" required>
+            <span></span>
+            <span></span>
         </div>
-        <div class='form-row'>
+      </div>
+      <div class="button">
             <button>Create Account</button>
-        </div>
-
-
+            <p >Already have an account..? <span>LOG IN</span></p>
+      </div>
     </form>
-    
 </body>
 </html>
